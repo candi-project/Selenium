@@ -1,0 +1,6 @@
+1602944138512	geckodriver	INFO	Listening on 127.0.0.1:63425
+1602944139348	mozrunner::runner	INFO	Running command: "/Applications/Firefox.app/Contents/MacOS/firefox-bin" "--marionette" "-foreground" "-no-remote" "-profile" "/var/folders/kn/fh547y4j2ds2cbw1fpwt93sc0000gn/T/rust_mozprofilebH2QeA"
+console.error: SearchCache: "_readCacheFile: Error reading cache file:" (new Error("", "(unknown module)"))
+1602944143762	Marionette	INFO	Listening on port 63441
+1602944143898	Marionette	WARN	TLS certificate errors will be ignored for this session
+1603049592699	Marionette	INFO	Stopped listening on port 63441
