@@ -1,6 +1,7 @@
 from selenium import webdriver
 import SeleniumFramework.utilities.CustomLogger as cl
 
+
 class WebDriverClass:
     log = cl.customLogger()
 
@@ -8,6 +9,7 @@ class WebDriverClass:
         driver = None
         if browserName == "chrome":
             driver = webdriver.Chrome(executable_path="/home/candi/Desktop/Selenium/Selenium/driver/chromedriver84")
+            driver.maximize_window()
             self.log.info("Chrome driver is initializing.")
 
         elif browserName == "safari":
@@ -19,4 +21,3 @@ class WebDriverClass:
             self.log.info("Firefox driver is initializing.")
 
         return driver
-

@@ -1,26 +1,24 @@
 from SeleniumFramework.base.DriverClass import WebDriverClass
 import time
 from SeleniumFramework.base.BasePage import BaseClass
-from SeleniumFramework.pages.ContactUsFormPage import ContactUsForm
+from SeleniumFramework.pages.LoginPage import SignInProGlove
+from SeleniumFramework.pages.Manage import ManageMark
 
 wd = WebDriverClass()
 driver = wd.getWebDriver("chrome")
 
 bp = BaseClass(driver)
-bp.launchWebPage("http://dummypoint.com/seleniumtemplate.html", "Selenium Template — DummyPoint")
+bp.launchWebPage("https://insight.proglove.com/login", "ProGlove Insight")
 time.sleep(2)
 
-cf = ContactUsForm(driver)
-cf.clickOnForm()
-time.sleep(2)
-cf.verifyFormPage()
-cf.enterName()
-cf.enterEmail()
-cf.selectGenderFemale()
-cf.enterMessage()
-cf.getCaptcha()
-cf.passCaptcha()
-cf.clickOnPostButton()
+lg = SignInProGlove(driver)
+lg.verifyPage()
+lg.enterCustomerID()
+lg.enterEmail()
+lg.enterPassword()
+time.sleep(3)
+lg.clickLoginBtn()
+
 
 
 # ele = bp.getWebElement("user_input","id")
@@ -44,5 +42,17 @@ cf.clickOnPostButton()
 # log = cl.customLogger()
 # log.info("Web page launched.")
 
-time.sleep(3)
+time.sleep(10)
+# lg.afterLogin()
+# time.sleep(2)
+# lg.releaseNote()
+
+mm = ManageMark(driver)
+mm.clickOnScanners()
+mm.verifyPage()
+mm.clickOnRefresh()
+mm.verifyPage()
+
+
+time.sleep(5)
 driver.quit()
