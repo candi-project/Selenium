@@ -16,6 +16,7 @@ class BaseClass:
     def __init__(self, driver):
         self.driver = driver
 
+
     def launchWebPage(self, url, title):
         try:
             self.driver.get(url)
@@ -140,6 +141,22 @@ class BaseClass:
             self.takeScreenshot(locatorType)
             assert False
         return ElementDisplayed
+
+    def isElementSelected(self, locatorValue, locatorType="id"):
+        ElementSelected = None
+        try:
+            locatorType = locatorType.lower()
+            webElement = self.waitForElement(locatorValue, locatorType)
+            ElementSelected = webElement.is_selected()
+            self.log.info(
+                "WebElement is Selected on web page with locator value " + locatorValue + " using locatorType " + locatorType)
+        except:
+            self.log.error(
+                "WebElement is not Selected on web page with locator value " + locatorValue + " using locatorType " + locatorType)
+            print_stack()
+            self.takeScreenshot(locatorType)
+            assert False
+        return ElementSelected
 
     def scrollTo(self, locatorValue, locatorType="id"):
         actions = ActionChains(self.driver)

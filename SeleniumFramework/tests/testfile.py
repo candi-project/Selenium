@@ -2,7 +2,8 @@ from SeleniumFramework.base.DriverClass import WebDriverClass
 import time
 from SeleniumFramework.base.BasePage import BaseClass
 from SeleniumFramework.pages.LoginPage import SignInProGlove
-from SeleniumFramework.pages.Manage import ManageMark
+from SeleniumFramework.pages.Manage_Scanners import ManageScanners
+from SeleniumFramework.pages.Manage_Connectivity import ManageConnectivity
 
 wd = WebDriverClass()
 driver = wd.getWebDriver("chrome")
@@ -47,11 +48,10 @@ time.sleep(10)
 # time.sleep(2)
 # lg.releaseNote()
 
-mm = ManageMark(driver)
-mm.clickOnScanners()
-mm.verifyPage()
-mm.clickOnRefresh()
-mm.verifyPage()
+mc = ManageConnectivity(driver)
+mc.clickOnConnectivity()
+mc.selectOnCheckBox()
+
 
 
 time.sleep(5)

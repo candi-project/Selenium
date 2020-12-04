@@ -84,5 +84,5 @@ class SignInProGlove(BaseClass):
             assert False
 
         cl.allureLogs("Release Note is verified.")
-        # self.driver.switch_to.window(window_before)
+        self.driver.switch_to.window(window_before)
         # print(window_before)

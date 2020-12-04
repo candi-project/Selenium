@@ -3,7 +3,7 @@ import SeleniumFramework.utilities.CustomLogger as cl
 import time
 
 
-class ManageMark(BaseClass):
+class ManageScanners(BaseClass):
 
     def __init__(self, driver):
         super().__init__(driver)
@@ -36,3 +36,4 @@ class ManageMark(BaseClass):
 
     def clickOnRefresh(self):
         self.clickOnElement(self._refreshButton, "css")
+        cl.allureLogs("Clicked on Refresh Button.")
