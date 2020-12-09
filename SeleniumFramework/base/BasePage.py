@@ -64,12 +64,28 @@ class BaseClass:
             assert False
         return webElement
 
+    def getWebElements(self, locatorValue, locatorType="id"):
+        webElement = None
+        try:
+            locatorType = locatorType.lower()
+            locatorByType = self.getLocatorType(locatorType)
+            webElement = self.driver.find_elements(locatorByType, locatorValue)
+            self.log.info(
+                "Web element found with locator value: " + locatorValue + " using locator Type: " + locatorType)
+        except:
+            self.log.error(
+                "Web element not found with locator value: " + locatorValue + " using locator Type: " + locatorType)
+            print_stack()
+            self.takeScreenshot(locatorType)
+            assert False
+        return webElement
+
     def waitForElement(self, locatorValue, locatorType="id"):
         webElement = None
         try:
             locatorType = locatorType.lower()
             locatorByType = self.getLocatorType(locatorType)
-            wait = WebDriverWait(self.driver, 25, poll_frequency=1,
+            wait = WebDriverWait(self.driver, 50, poll_frequency=1,
                                  ignored_exceptions=[ElementNotVisibleException, NoSuchElementException])
             webElement = wait.until(ec.presence_of_element_located((locatorByType, locatorValue)))
             self.log.info(

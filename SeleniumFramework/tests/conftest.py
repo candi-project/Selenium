@@ -10,7 +10,7 @@ def beforeClass(request):
     driver1 = WebDriverClass()
     driver = driver1.getWebDriver("chrome")
     bp = BaseClass(driver)
-    bp.launchWebPage("https://insight.proglove.com/login", "ProGlove Insight")
+    bp.launchWebPage("https://pr-666.d1n9mbbc8uh0el.amplifyapp.com/devices/configuration/details", "ProGlove Insight")
     if request.cls is not None:
         request.cls.driver = driver
 
@@ -24,8 +24,8 @@ def beforeClass(request):
     time.sleep(2)
     lg.clickLoginBtn()
     time.sleep(10)
-    lg.afterLogin()
-    lg.releaseNote()
+    # lg.afterLogin()
+    # lg.releaseNote()
 
     yield driver
     time.sleep(5)

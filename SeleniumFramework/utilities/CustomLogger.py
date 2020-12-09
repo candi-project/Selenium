@@ -16,7 +16,7 @@ def customLogger():
     # 4.) Create the fileHandler to save the logs in the file
     #fileHandler = logging.FileHandler("{0}.log".format(logName), mode='a')
     #fileHandler = logging.FileHandler(filename='Candi.log', mode='a')
-    fileHandler = logging.FileHandler("../reports/Candi.log", mode='a')
+    fileHandler = logging.FileHandler("../reports/Candi.log", mode='w')
 
     # 5.) Set the logLevel for fileHandler
     fileHandler.setLevel(logging.DEBUG)
