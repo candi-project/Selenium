@@ -1,0 +1,6 @@
+[32mINFO    [0m BarcodeConfigurations:BasePage.py:92 Web element found with locator value: #done-btn > button using locator Type: css
+[32mINFO    [0m BarcodeConfigurations:BasePage.py:107 Clicked on WebElement with locator value #done-btn > button using locator Type: css
+[32mINFO    [0m BarcodeConfigurations:BasePage.py:92 Web element found with locator value: #qr-code-container > canvas using locator Type: css
+[32mINFO    [0m BarcodeConfigurations:BasePage.py:152 WebElement is Displayed on web page with locator value #qr-code-container > canvas using locatorType css
+[32mINFO    [0m BarcodeConfigurations:BasePage.py:92 Web element found with locator value: #button-container > app-button:nth-child(2) > button using locator Type: css
+[32mINFO    [0m BarcodeConfigurations:BasePage.py:107 Clicked on WebElement with locator value #button-container > app-button:nth-child(2) > button using locator Type: css

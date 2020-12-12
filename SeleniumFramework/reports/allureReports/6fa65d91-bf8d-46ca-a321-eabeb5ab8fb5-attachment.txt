@@ -1,0 +1,146 @@
+  File "/home/candi/.local/bin/py.test", line 8, in <module>
+    sys.exit(console_main())
+  File "/home/candi/.local/lib/python3.7/site-packages/_pytest/config/__init__.py", line 180, in console_main
+    code = main()
+  File "/home/candi/.local/lib/python3.7/site-packages/_pytest/config/__init__.py", line 158, in main
+    config=config
+  File "/home/candi/.local/lib/python3.7/site-packages/pluggy/hooks.py", line 286, in __call__
+    return self._hookexec(self, self.get_hookimpls(), kwargs)
+  File "/home/candi/.local/lib/python3.7/site-packages/pluggy/manager.py", line 93, in _hookexec
+    return self._inner_hookexec(hook, methods, kwargs)
+  File "/home/candi/.local/lib/python3.7/site-packages/pluggy/manager.py", line 87, in <lambda>
+    firstresult=hook.spec.opts.get("firstresult") if hook.spec else False,
+  File "/home/candi/.local/lib/python3.7/site-packages/pluggy/callers.py", line 187, in _multicall
+    res = hook_impl.function(*args)
+  File "/home/candi/.local/lib/python3.7/site-packages/_pytest/main.py", line 289, in pytest_cmdline_main
+    return wrap_session(config, _main)
+  File "/home/candi/.local/lib/python3.7/site-packages/_pytest/main.py", line 240, in wrap_session
+    session.exitstatus = doit(config, session) or 0
+  File "/home/candi/.local/lib/python3.7/site-packages/_pytest/main.py", line 296, in _main
+    config.hook.pytest_runtestloop(session=session)
+  File "/home/candi/.local/lib/python3.7/site-packages/pluggy/hooks.py", line 286, in __call__
+    return self._hookexec(self, self.get_hookimpls(), kwargs)
+  File "/home/candi/.local/lib/python3.7/site-packages/pluggy/manager.py", line 93, in _hookexec
+    return self._inner_hookexec(hook, methods, kwargs)
+  File "/home/candi/.local/lib/python3.7/site-packages/pluggy/manager.py", line 87, in <lambda>
+    firstresult=hook.spec.opts.get("firstresult") if hook.spec else False,
+  File "/home/candi/.local/lib/python3.7/site-packages/pluggy/callers.py", line 187, in _multicall
+    res = hook_impl.function(*args)
+  File "/home/candi/.local/lib/python3.7/site-packages/_pytest/main.py", line 321, in pytest_runtestloop
+    item.config.hook.pytest_runtest_protocol(item=item, nextitem=nextitem)
+  File "/home/candi/.local/lib/python3.7/site-packages/pluggy/hooks.py", line 286, in __call__
+    return self._hookexec(self, self.get_hookimpls(), kwargs)
+  File "/home/candi/.local/lib/python3.7/site-packages/pluggy/manager.py", line 93, in _hookexec
+    return self._inner_hookexec(hook, methods, kwargs)
+  File "/home/candi/.local/lib/python3.7/site-packages/pluggy/manager.py", line 87, in <lambda>
+    firstresult=hook.spec.opts.get("firstresult") if hook.spec else False,
+  File "/home/candi/.local/lib/python3.7/site-packages/pluggy/callers.py", line 187, in _multicall
+    res = hook_impl.function(*args)
+  File "/home/candi/.local/lib/python3.7/site-packages/_pytest/runner.py", line 100, in pytest_runtest_protocol
+    runtestprotocol(item, nextitem=nextitem)
+  File "/home/candi/.local/lib/python3.7/site-packages/_pytest/runner.py", line 117, in runtestprotocol
+    reports.append(call_and_report(item, "call", log))
+  File "/home/candi/.local/lib/python3.7/site-packages/_pytest/runner.py", line 207, in call_and_report
+    call = call_runtest_hook(item, when, **kwds)
+  File "/home/candi/.local/lib/python3.7/site-packages/_pytest/runner.py", line 247, in call_runtest_hook
+    lambda: ihook(item=item, **kwds), when=when, reraise=reraise
+  File "/home/candi/.local/lib/python3.7/site-packages/_pytest/runner.py", line 294, in from_call
+    result = func()  # type: Optional[_T]
+  File "/home/candi/.local/lib/python3.7/site-packages/_pytest/runner.py", line 247, in <lambda>
+    lambda: ihook(item=item, **kwds), when=when, reraise=reraise
+  File "/home/candi/.local/lib/python3.7/site-packages/pluggy/hooks.py", line 286, in __call__
+    return self._hookexec(self, self.get_hookimpls(), kwargs)
+  File "/home/candi/.local/lib/python3.7/site-packages/pluggy/manager.py", line 93, in _hookexec
+    return self._inner_hookexec(hook, methods, kwargs)
+  File "/home/candi/.local/lib/python3.7/site-packages/pluggy/manager.py", line 87, in <lambda>
+    firstresult=hook.spec.opts.get("firstresult") if hook.spec else False,
+  File "/home/candi/.local/lib/python3.7/site-packages/pluggy/callers.py", line 187, in _multicall
+    res = hook_impl.function(*args)
+  File "/home/candi/.local/lib/python3.7/site-packages/_pytest/runner.py", line 153, in pytest_runtest_call
+    item.runtest()
+  File "/home/candi/.local/lib/python3.7/site-packages/_pytest/unittest.py", line 278, in runtest
+    self._testcase(result=self)  # type: ignore[arg-type]
+  File "/usr/lib/python3.7/unittest/case.py", line 676, in __call__
+    return self.run(*args, **kwds)
+  File "/usr/lib/python3.7/unittest/case.py", line 628, in run
+    testMethod()
+  File "/home/candi/Desktop/Selenium/Selenium/SeleniumFramework/tests/test_PGI_687_barcode_configuration_Gateway.py", line 46, in test_create_config_large_file
+    self.bc.add_Workflow_Rules_Large_File()
+  File "/home/candi/Desktop/Selenium/Selenium/SeleniumFramework/pages/PGI_687_Barcode_Configuration.py", line 149, in add_Workflow_Rules_Large_File
+    self.clickOnElement(self._add_Rule, "xpath")
+  File "/home/candi/Desktop/Selenium/Selenium/SeleniumFramework/base/BasePage.py", line 104, in clickOnElement
+    webElement = self.waitForElement(locatorValue, locatorType)
+  File "/home/candi/Desktop/Selenium/Selenium/SeleniumFramework/base/BasePage.py", line 96, in waitForElement
+    print_stack()
+  File "/home/candi/.local/bin/py.test", line 8, in <module>
+    sys.exit(console_main())
+  File "/home/candi/.local/lib/python3.7/site-packages/_pytest/config/__init__.py", line 180, in console_main
+    code = main()
+  File "/home/candi/.local/lib/python3.7/site-packages/_pytest/config/__init__.py", line 158, in main
+    config=config
+  File "/home/candi/.local/lib/python3.7/site-packages/pluggy/hooks.py", line 286, in __call__
+    return self._hookexec(self, self.get_hookimpls(), kwargs)
+  File "/home/candi/.local/lib/python3.7/site-packages/pluggy/manager.py", line 93, in _hookexec
+    return self._inner_hookexec(hook, methods, kwargs)
+  File "/home/candi/.local/lib/python3.7/site-packages/pluggy/manager.py", line 87, in <lambda>
+    firstresult=hook.spec.opts.get("firstresult") if hook.spec else False,
+  File "/home/candi/.local/lib/python3.7/site-packages/pluggy/callers.py", line 187, in _multicall
+    res = hook_impl.function(*args)
+  File "/home/candi/.local/lib/python3.7/site-packages/_pytest/main.py", line 289, in pytest_cmdline_main
+    return wrap_session(config, _main)
+  File "/home/candi/.local/lib/python3.7/site-packages/_pytest/main.py", line 240, in wrap_session
+    session.exitstatus = doit(config, session) or 0
+  File "/home/candi/.local/lib/python3.7/site-packages/_pytest/main.py", line 296, in _main
+    config.hook.pytest_runtestloop(session=session)
+  File "/home/candi/.local/lib/python3.7/site-packages/pluggy/hooks.py", line 286, in __call__
+    return self._hookexec(self, self.get_hookimpls(), kwargs)
+  File "/home/candi/.local/lib/python3.7/site-packages/pluggy/manager.py", line 93, in _hookexec
+    return self._inner_hookexec(hook, methods, kwargs)
+  File "/home/candi/.local/lib/python3.7/site-packages/pluggy/manager.py", line 87, in <lambda>
+    firstresult=hook.spec.opts.get("firstresult") if hook.spec else False,
+  File "/home/candi/.local/lib/python3.7/site-packages/pluggy/callers.py", line 187, in _multicall
+    res = hook_impl.function(*args)
+  File "/home/candi/.local/lib/python3.7/site-packages/_pytest/main.py", line 321, in pytest_runtestloop
+    item.config.hook.pytest_runtest_protocol(item=item, nextitem=nextitem)
+  File "/home/candi/.local/lib/python3.7/site-packages/pluggy/hooks.py", line 286, in __call__
+    return self._hookexec(self, self.get_hookimpls(), kwargs)
+  File "/home/candi/.local/lib/python3.7/site-packages/pluggy/manager.py", line 93, in _hookexec
+    return self._inner_hookexec(hook, methods, kwargs)
+  File "/home/candi/.local/lib/python3.7/site-packages/pluggy/manager.py", line 87, in <lambda>
+    firstresult=hook.spec.opts.get("firstresult") if hook.spec else False,
+  File "/home/candi/.local/lib/python3.7/site-packages/pluggy/callers.py", line 187, in _multicall
+    res = hook_impl.function(*args)
+  File "/home/candi/.local/lib/python3.7/site-packages/_pytest/runner.py", line 100, in pytest_runtest_protocol
+    runtestprotocol(item, nextitem=nextitem)
+  File "/home/candi/.local/lib/python3.7/site-packages/_pytest/runner.py", line 117, in runtestprotocol
+    reports.append(call_and_report(item, "call", log))
+  File "/home/candi/.local/lib/python3.7/site-packages/_pytest/runner.py", line 207, in call_and_report
+    call = call_runtest_hook(item, when, **kwds)
+  File "/home/candi/.local/lib/python3.7/site-packages/_pytest/runner.py", line 247, in call_runtest_hook
+    lambda: ihook(item=item, **kwds), when=when, reraise=reraise
+  File "/home/candi/.local/lib/python3.7/site-packages/_pytest/runner.py", line 294, in from_call
+    result = func()  # type: Optional[_T]
+  File "/home/candi/.local/lib/python3.7/site-packages/_pytest/runner.py", line 247, in <lambda>
+    lambda: ihook(item=item, **kwds), when=when, reraise=reraise
+  File "/home/candi/.local/lib/python3.7/site-packages/pluggy/hooks.py", line 286, in __call__
+    return self._hookexec(self, self.get_hookimpls(), kwargs)
+  File "/home/candi/.local/lib/python3.7/site-packages/pluggy/manager.py", line 93, in _hookexec
+    return self._inner_hookexec(hook, methods, kwargs)
+  File "/home/candi/.local/lib/python3.7/site-packages/pluggy/manager.py", line 87, in <lambda>
+    firstresult=hook.spec.opts.get("firstresult") if hook.spec else False,
+  File "/home/candi/.local/lib/python3.7/site-packages/pluggy/callers.py", line 187, in _multicall
+    res = hook_impl.function(*args)
+  File "/home/candi/.local/lib/python3.7/site-packages/_pytest/runner.py", line 153, in pytest_runtest_call
+    item.runtest()
+  File "/home/candi/.local/lib/python3.7/site-packages/_pytest/unittest.py", line 278, in runtest
+    self._testcase(result=self)  # type: ignore[arg-type]
+  File "/usr/lib/python3.7/unittest/case.py", line 676, in __call__
+    return self.run(*args, **kwds)
+  File "/usr/lib/python3.7/unittest/case.py", line 628, in run
+    testMethod()
+  File "/home/candi/Desktop/Selenium/Selenium/SeleniumFramework/tests/test_PGI_687_barcode_configuration_Gateway.py", line 46, in test_create_config_large_file
+    self.bc.add_Workflow_Rules_Large_File()
+  File "/home/candi/Desktop/Selenium/Selenium/SeleniumFramework/pages/PGI_687_Barcode_Configuration.py", line 149, in add_Workflow_Rules_Large_File
+    self.clickOnElement(self._add_Rule, "xpath")
+  File "/home/candi/Desktop/Selenium/Selenium/SeleniumFramework/base/BasePage.py", line 111, in clickOnElement
+    print_stack()
