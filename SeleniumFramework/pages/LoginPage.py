@@ -53,7 +53,7 @@ class SignInProGlove(BaseClass):
 
         webReleaseNote = self.getWebElement(self._webPortalReleaseNote, "css")
         webHeader = webReleaseNote.text
-        if webHeader == "ProGlove Insight Webportal (Nov 16, 2020)":
+        if webHeader == "ProGlove Insight Webportal (Dec 10, 2020)":
             print("Header is " + webHeader)
             cl.allureLogs("ProGlove Insight Webportal Release Note is verified.")
             assert True
@@ -76,13 +76,14 @@ class SignInProGlove(BaseClass):
 
         ele = self.getWebElement(self._headerAndroidReleaseNote, "css")
         header = ele.text
-        if header == "Insight Mobile (Android) release notes v1.8.0":
+        if header == "Insight Mobile (Android) release notes v1.9.0":
             print("Header is " + header)
+            cl.allureLogs("Release Note is verified.")
             assert True
         else:
             print("Header is " + header)
+            cl.allureLogs("Release Note is incorrect.")
             assert False
 
-        cl.allureLogs("Release Note is verified.")
         self.driver.switch_to.window(window_before)
         # print(window_before)
