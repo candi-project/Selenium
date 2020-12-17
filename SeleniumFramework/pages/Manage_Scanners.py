@@ -12,7 +12,7 @@ class ManageScanners(BaseClass):
     # Locators  values
     _manageScanners = "Scanners"  # link
     _lastConnectivityDeviceName = "body > app-root > div > app-side-nav > mat-drawer-container > mat-drawer-content > span > app-graph-active-devices > mat-card > mat-card-content > table > tbody > tr:nth-child(1) > td.mat-cell.cdk-column-last_connected_gateway_name.mat-column-last_connected_gateway_name.ng-star-inserted"  # css
-    _refreshButton = "body > app-root > div > app-side-nav > mat-drawer-container > mat-drawer-content > span > app-graph-active-devices > mat-card > div > div > app-refresh-button > div"  # css
+    _refreshButton = "#mat-expansion-panel-header-0 > span > mat-panel-description > div > mat-icon"  # css
 
     def clickOnScanners(self):
         self.clickOnElement(self._manageScanners, "link")

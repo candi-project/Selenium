@@ -17,8 +17,8 @@ class BarcodeConfigurations(BaseClass):
     _CreateNewConfigurationBtn = "body > app-root > div > app-side-nav > mat-drawer-container > mat-drawer-content > " \
                                  "span > app-configuration-list > div > div.actions-container > a > app-button > " \
                                  "button"  # css
-    # _InsightMobileBtn = "#mat-radio-3 > label"  # css
-    _InsightMobileBtn = "//mat-radio-button[@class='mat-radio-button mat-accent']"  # xpath
+    _Insight_Mobile_iOS = "/html/body/app-root/div/app-side-nav/mat-drawer-container/mat-drawer-content/span/app-configuration-detail/mat-card/mat-card-content/div[2]/mat-radio-group/mat-radio-button[3]" # xpath
+
     _Android_NextBtn = "#new-file-card > mat-card-content > app-button:nth-child(3) > button"  # css
     _Config_NextBtn = "#done-btn > button"  # css
     _ConfigurationName = "#name-input > div > div.input-wrapper > input"  # css
@@ -32,14 +32,13 @@ class BarcodeConfigurations(BaseClass):
                         "app-configuration-list > div > mat-card > mat-card-content > table > tbody > tr:nth-child(1) " \
                         "> td.mat-cell.cdk-column-name.mat-column-name.ng-star-inserted"  # css
     _edit = "/html/body/app-root/div/app-side-nav/mat-drawer-container/mat-drawer-content/span/app-configuration-list" \
-            "/div/mat-card/mat-card-content/table/tbody/tr[3]/td[4]/a[2]/img "
+            "/div/mat-card/mat-card-content/table/tbody/tr[2]/td[4]/a[2]/img "
     # xpath
     # _add_Workflow_Rules = "/html/body/app-root/div/app-side-nav/mat-drawer-container/mat-drawer-content/span/app" \
     #                       "-configuration-detail/div/div[" \
     #                       "3]/mat-tab-group/div/mat-tab-body/div/app-configuration-profile/div/mat-vertical-stepper" \
     #                       "/div[7]/mat-step-header"  # xpath
-    _add_Workflow_Rules_Android = "//mat-step-header[@class='mat-vertical-stepper-header mat-step-header' and @aria-posinset='7']"  # xpath
-    _add_Workflow_Rules_Gateway ="/html/body/app-root/div/app-side-nav/mat-drawer-container/mat-drawer-content/span/app-configuration-detail/div/div[2]/mat-tab-group/div/mat-tab-body/div/app-configuration-profile/div/mat-vertical-stepper/div[5]/mat-step-header" #xpath
+    _add_Workflow_Rules = "/html/body/app-root/div/app-side-nav/mat-drawer-container/mat-drawer-content/span/app-configuration-detail/div/div[2]/mat-tab-group/div/mat-tab-body/div/app-configuration-profile/div/mat-vertical-stepper/div[5]/mat-step-header"  # xpath
     # _add_Rule = "/html/body/app-root/div/app-side-nav/mat-drawer-container/mat-drawer-content/span/app-configuration" \
     #             "-detail/div/div[3]/mat-tab-group/div/mat-tab-body/div/app-configuration-profile/div/mat-vertical" \
     #             "-stepper/div[7]/div/div/div/app-rule-list/mat-card/mat-card-content/div[2]/button"  # xpath
@@ -78,7 +77,7 @@ class BarcodeConfigurations(BaseClass):
 
     def choose_Connectivity_Option(self):
         time.sleep(5)
-        self.clickOnElement(self._InsightMobileBtn, "xpath")
+        self.clickOnElement(self._Insight_Mobile_iOS, "xpath")
 
     def clickOnNext_Android(self):
         self.clickOnElement(self._Android_NextBtn, "css")
@@ -87,10 +86,10 @@ class BarcodeConfigurations(BaseClass):
         self.clickOnElement(self._Config_NextBtn, "css")
 
     def assign_A_Name(self):
-        self.sendText("PGI-687 sanity2", self._ConfigurationName, "css")
+        self.sendText("PGI-533 sanity", self._ConfigurationName, "css")
 
     def assign_A_Name_error(self):
-        self.sendText("PGI-687 Error", self._ConfigurationName, "css")
+        self.sendText("PGI-533 Error", self._ConfigurationName, "css")
 
     def clickOnNext_afterAName(self):
         time.sleep(2)
@@ -103,7 +102,7 @@ class BarcodeConfigurations(BaseClass):
     def barcode_configuration_error(self):
         time.sleep(2)
         self.isElementDisplayed(self._apply_the_configuration, "css")
-        self.log.info("Error screen-apply_the_configuration is shown.")
+        self.log.info("Apply_the_configuration screen is shown.")
         self.clickOnElement(self._save_apply_the_configuration, "css")
 
     def clickOnBarcodeSaveBtn(self):
@@ -126,70 +125,7 @@ class BarcodeConfigurations(BaseClass):
         time.sleep(10)
         self.clickOnElement(self._edit, "xpath")
 
-    def add_Workflow_Rules(self):
-        time.sleep(3)
-        self.scrollTo(self._Config_NextBtn, "css")
-        self.clickOnElement(self._add_Workflow_Rules_Android, "xpath")
-        self.scrollTo(self._Config_NextBtn, "css")
-        self.clickOnElement(self._add_Rule, "xpath")
-        time.sleep(2)
-        self.sendText("Sanity", self._rule_Name, "css")
-        self.clickOnElement(self._add_Conditions, "css")
-        self.sendText("Hello", self._barcode_equals, "css")
-        self.clickOnElement(self._save_Conditions, "css")
-        time.sleep(2)
-        self.clickOnElement(self._add_Actions, "css")
-        self.clickOnElement(self._make_A_Beep, "css")
-        self.clickOnElement(self._save_Actions, "css")
-        self.clickOnElement(self._save_Rule, "css")
-
-    def add_Workflow_Rules_Large_File(self):
-        time.sleep(3)
-        self.scrollTo(self._Config_NextBtn, "css")
-        #self.clickOnElement(self._add_Workflow_Rules_Android, "xpath")
-        self.clickOnElement(self._add_Workflow_Rules_Gateway, "xpath")
-        self.scrollTo(self._Config_NextBtn, "css")
-        self.clickOnElement(self._add_Rule, "xpath")
-        time.sleep(2)
-        self.sendText("10 Random Rules", self._rule_Name, "css")
-
-        for x in range(0, 10):
-            self.clickOnElement(self._add_Conditions, "css")
-            self.sendText(
-                "asdfagjrklgjfdklgldkf;ldasdfagjrklgjfdklgldkf;ldasdfagjrklgjfdklgldkf;ldasdfagjrklgjfdklgldkf"
-                ";ldasdfagjrklgjfdklgldkf;ldasdfagjrklgjfdklgldkf;ldasdfagjrklgjfdklgldkf;ldasdfagjrklgjfdklgldkf"
-                ";ldasdfagjrklgjfdklgldkf;ldasdfagjrklgjfdklgldkf;ldasdfagjrklgjfdklgldkf;ldasdfagjrklgjfdklgldkf"
-                ";ldasdfagjrklgjfdklgldkf;ldasdfagjrklgjfdklgldkf;ld",
-                self._barcode_equals, "css")
-            self.clickOnElement(self._save_Conditions, "css")
-            time.sleep(2)
-
-        time.sleep(3)
-        self.clickOnElement(self._add_Actions, "css")
-        self.clickOnElement(self._make_A_Beep, "css")
-        self.clickOnElement(self._save_Actions, "css")
-        self.clickOnElement(self._save_Rule, "css")
-
-    def verify_Workflow_Rules_Saved(self):
-        time.sleep(5)
-        filename = self.getText(self._workflow_rule_filename_folded, "css")
-        if filename == "Sanity":
-            cl.allureLogs("Workflow_Rules file name is " + filename)
-            self.log.info("Workflow_Rules file name is " + filename)
-        else:
-            cl.allureLogs("Workflow_Rules file name is " + filename)
-            self.log.info("Workflow_Rules file name is " + filename)
-            assert False
-
     def click_On_Barcode_Back(self):
         self.clickOnElement(self._barcode_BackBtn, "css")
 
-    def verify_Workflow_Rules_Content(self):
-        self.clickOnElement(self._workflow_rule_filename_folded_2, "css")
-        self.scrollTo(self._actions_card, "css")
-        action = self.getText(self._actions_card, "css")
-        self.log.info("Action name is " + action)
-        if "Beep" not in action:
-            assert False
-        else:
-            self.clickOnElement(self._save_Rule, "css")
+

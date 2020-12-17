@@ -1,3 +1,5 @@
+from selenium.webdriver.common.by import By
+
 from SeleniumFramework.base.DriverClass import WebDriverClass
 import time
 from SeleniumFramework.base.BasePage import BaseClass
@@ -9,7 +11,7 @@ wd = WebDriverClass()
 driver = wd.getWebDriver("chrome")
 
 bp = BaseClass(driver)
-bp.launchWebPage("https://pr-666.d1n9mbbc8uh0el.amplifyapp.com/devices/configuration/details", "ProGlove Insight")
+bp.launchWebPage("https://insight.proglove.com/login", "ProGlove Insight")
 time.sleep(2)
 
 lg = SignInProGlove(driver)
@@ -56,8 +58,21 @@ lg.clickLoginBtn()
 
 bc = BarcodeConfigurations(driver)
 bc.clickOnConfiguration()
-# bc.scrollToCreate()
-# bc.choose_Connectivity_Option()
+bc.scrollToCreate()
+
+ele_r = driver.find_elements(By.XPATH, "//mat-radio-button[@class='mat-radio-button mat-accent']")
+time.sleep(3)
+
+for rbutton in ele_r:
+    rbutton_t = rbutton.text
+    print(rbutton_t)
+
+    if rbutton_t == "Insight Mobile (iOS)":
+        rbutton.click()
+        time.sleep(6)
+        print("Is selected: ", rbutton.is_selected())
+        break
+#bc.choose_Connectivity_Option()
 # bc.clickOnNext_Android()
 # bc.clickOnNext_ConfigTool()
 # bc.assign_A_Name()
@@ -74,10 +89,10 @@ bc.clickOnConfiguration()
 # bc.click_On_Barcode_Back()
 # bc.verify_Workflow_Rules_Content()
 
-bc.clickOnEdit()
-bc.add_Workflow_Rules_Large_File()
-bc.clickOnNext_ConfigTool()
-bc.barcode_configuration_error()
+# bc.clickOnEdit()
+# bc.add_Workflow_Rules_Large_File()
+# bc.clickOnNext_ConfigTool()
+# bc.barcode_configuration_error()
 
 
 time.sleep(5)

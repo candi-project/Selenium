@@ -27,7 +27,7 @@ class SignInProGlove(BaseClass):
         cl.allureLogs("Page is verified.")
 
     def enterCustomerID(self):
-        self.sendText("7w02gw6z", self._customerID, "css")
+        self.sendText("r17wdzko", self._customerID, "css")
         cl.allureLogs("Entered customer ID.")
 
     def enterEmail(self):
@@ -53,7 +53,7 @@ class SignInProGlove(BaseClass):
 
         webReleaseNote = self.getWebElement(self._webPortalReleaseNote, "css")
         webHeader = webReleaseNote.text
-        if webHeader == "ProGlove Insight Webportal (Dec 10, 2020)":
+        if webHeader == "ProGlove Insight Webportal (Dec 16, 2020)":
             print("Header is " + webHeader)
             cl.allureLogs("ProGlove Insight Webportal Release Note is verified.")
             assert True
