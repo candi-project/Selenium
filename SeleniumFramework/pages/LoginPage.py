@@ -27,7 +27,7 @@ class SignInProGlove(BaseClass):
         cl.allureLogs("Page is verified.")
 
     def enterCustomerID(self):
-        self.sendText("r17wdzko", self._customerID, "css")
+        self.sendText("dpucuicw", self._customerID, "css")
         cl.allureLogs("Entered customer ID.")
 
     def enterEmail(self):
