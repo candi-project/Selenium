@@ -28,7 +28,7 @@ class SignInProGlove(BaseClass):
 
     def enterCustomerID(self):
         self.sendText("dpucuicw", self._customerID, "css")
-        #self.sendText("r17wdzkow", self._customerID, "css")
+        #self.sendText("r17wdzko", self._customerID, "css")
 
         cl.allureLogs("Entered customer ID.")
 

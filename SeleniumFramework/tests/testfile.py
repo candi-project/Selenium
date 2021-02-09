@@ -8,12 +8,13 @@ from SeleniumFramework.pages.Manage_Scanners import ManageScanners
 from SeleniumFramework.pages.Manage_Connectivity import ManageConnectivity
 from SeleniumFramework.pages.PGI_906 import ManageConnectivity2
 from SeleniumFramework.pages.PGI_687_Barcode_Configuration import BarcodeConfigurations
+from SeleniumFramework.pages.PGI_557_Add_Job import AddJob
 from SeleniumFramework.pages.PGI_248_Open_Source_License import OpenSourceLicense
 wd = WebDriverClass()
 driver = wd.getWebDriver("chrome")
 
 bp = BaseClass(driver)
-bp.launchWebPage("https://pr-743.d1n9mbbc8uh0el.amplifyapp.com/home", "ProGlove Insight")
+bp.launchWebPage("https://d36o9jt7i3m1do.cloudfront.net/home", "ProGlove Insight")
 time.sleep(2)
 
 lg = SignInProGlove(driver)
@@ -24,13 +25,19 @@ lg.enterPassword()
 time.sleep(3)
 lg.clickLoginBtn()
 
-# op = OpenSourceLicense(driver)
-# op.click_open_source_license()
-# op.click_download_mark()
-# op.click_download_gateway()
-# time.sleep(6)
-# op.is_download_finished("/home/candi/Downloads/")
-# op.remove_download("/home/candi/Downloads/mark_legal_notice_11_08_2020.pdf")
+
+# aj = AddJob(driver)
+# aj.click_job_link()
+# aj.add_job()
+# aj.check_error_message()
+
+op = OpenSourceLicense(driver)
+op.click_open_source_license()
+op.click_download_mark()
+op.click_download_gateway()
+time.sleep(6)
+op.is_download_finished("/home/candi/Downloads/")
+op.remove_download("/home/candi/Downloads/mark_legal_notice_11_08_2020.pdf")
 
 
 
@@ -60,14 +67,14 @@ lg.clickLoginBtn()
 # time.sleep(2)
 # lg.releaseNote()
 
-mc = ManageConnectivity2(driver)
-mc.clickOnConnectivity()
-mc.selectOnCheckBox()
+# mc = ManageConnectivity2(driver)
+# mc.clickOnConnectivity()
+# mc.selectOnCheckBox()
 # mc.clickOnRegistrationFile()
 # mc.is_download_finished("/home/candi/Downloads")
 # mc.remove_download("/home/candi/Downloads/insight_provisioning.zip")
-mc.click_on_edit()
-mc.edit_device_content()
+# mc.click_on_edit()
+# mc.edit_device_content()
 
 # bc = BarcodeConfigurations(driver)
 # bc.clickOnConfiguration()
