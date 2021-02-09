@@ -8,7 +8,7 @@ class WebDriverClass:
     def getWebDriver(self, browserName):
         driver = None
         if browserName == "chrome":
-            driver = webdriver.Chrome(executable_path="/home/candi/Desktop/Selenium/Selenium/driver/chromedriver84")
+            driver = webdriver.Chrome(executable_path="/home/candi/Desktop/Selenium/Selenium/driver/chromedriver87")
             driver.maximize_window()
             self.log.info("Chrome driver is initializing.")
 

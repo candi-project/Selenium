@@ -1,0 +1,31 @@
+1605886817578	geckodriver	INFO	Listening on 127.0.0.1:39999
+1605886817583	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofileoXdS8h"
+1605886820210	Marionette	INFO	Listening on port 33529
+1605886820291	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: http://dummypoint.com/seleniumtemplate.html, line 498: ReferenceError: demo is not defined
+1605886832751	Marionette	INFO	Stopped listening on port 33529
+1605886862175	geckodriver	INFO	Listening on 127.0.0.1:59473
+1605886862180	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofilep6lQCe"
+1605886864709	Marionette	INFO	Listening on port 38235
+1605886864788	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: http://dummypoint.com/seleniumtemplate.html, line 498: ReferenceError: demo is not defined
+1605886876660	Marionette	INFO	Stopped listening on port 38235
+1605886908281	geckodriver	INFO	Listening on 127.0.0.1:50781
+1605886908286	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile4ZmflO"
+1605886910890	Marionette	INFO	Listening on port 37173
+1605886910897	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: resource://gre/modules/URIFixup.jsm, line 281: NS_ERROR_FAILURE: Should pass a non-null uri
+JavaScript error: http://dummypoint.com/seleniumtemplate.html, line 498: ReferenceError: demo is not defined
+1605886927612	Marionette	INFO	Stopped listening on port 37173
+1605886937669	geckodriver	INFO	Listening on 127.0.0.1:35261
+1605886937674	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofileBmP328"
+1605886940190	Marionette	INFO	Listening on port 34745
+1605886940281	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: http://dummypoint.com/seleniumtemplate.html, line 498: ReferenceError: demo is not defined
+1605886956696	Marionette	INFO	Stopped listening on port 34745
+1605887024984	geckodriver	INFO	Listening on 127.0.0.1:35493
+1605887024989	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofileDrmZgA"
+1605887027440	Marionette	INFO	Listening on port 40421
+1605887027496	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: http://dummypoint.com/seleniumtemplate.html, line 498: ReferenceError: demo is not defined
+1605887045476	Marionette	INFO	Stopped listening on port 40421

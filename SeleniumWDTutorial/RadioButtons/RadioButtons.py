@@ -16,6 +16,7 @@ for rbutton in ele_r:
     rbutton_t = rbutton.get_attribute("value")
     print(rbutton_t)
 
+
     if rbutton_t == "Button3":
         rbutton.click()
         print("Is selected: ", rbutton.is_selected())
