@@ -2,6 +2,7 @@ from SeleniumFramework.base.DriverClass import WebDriverClass
 import time
 from SeleniumFramework.base.BasePage import BaseClass
 from SeleniumFramework.pages.sign_up_page import SignUpPage
+from SeleniumFramework.pages.sign_in_page import SignInPage
 
 wd = WebDriverClass()
 driver = wd.getWebDriver("chrome")
@@ -11,11 +12,17 @@ bp.launchWebPage("https://my.symphony.com/", "Symphony | Secure Seamless Communi
 driver.maximize_window()
 time.sleep(2)
 
-su = SignUpPage(driver)
-su.click_sign_up_link()
-su.fill_in_form()
-su.check_password()
-su.after_sign_up_same_email()
+# su = SignUpPage(driver)
+# su.click_sign_up_link()
+# su.fill_in_form()
+# su.check_password()
+# su.after_sign_up_same_email()
+
+si = SignInPage(driver)
+si.enter_user_data()
+si.enter_authentication_code()
+si.after_sign_in()
+
 
 
 # cf = ContactUsForm(driver)

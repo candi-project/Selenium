@@ -8,7 +8,7 @@ class SignUpPage(BaseClass):
         super().__init__(driver)
         driver = self.driver
 
-    # Locators  values in Sign up page
+    # Locators  values on Sign up page
     _sign_up_link = "Sign up"  # link
     _first_name = "signup-first"  # id
     _last_name = "signup-last"  # id
