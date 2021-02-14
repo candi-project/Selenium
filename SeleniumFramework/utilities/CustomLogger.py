@@ -5,7 +5,6 @@ from datetime import datetime
 
 
 def customLogger():
-
     LOG_FILENAME = datetime.now().strftime('../reports/logfile_%H_%M_%S_%d_%m_%Y.log')
 
     # 1.This is used to get the  class / method name from where this customLogger method is called.

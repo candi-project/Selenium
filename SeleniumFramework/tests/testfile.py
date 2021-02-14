@@ -1,26 +1,34 @@
 from SeleniumFramework.base.DriverClass import WebDriverClass
 import time
 from SeleniumFramework.base.BasePage import BaseClass
-from SeleniumFramework.pages.ContactUsFormPage import ContactUsForm
+from SeleniumFramework.pages.sign_up_page import SignUpPage
 
 wd = WebDriverClass()
 driver = wd.getWebDriver("chrome")
 
 bp = BaseClass(driver)
-bp.launchWebPage("http://dummypoint.com/seleniumtemplate.html", "Selenium Template — DummyPoint")
+bp.launchWebPage("https://my.symphony.com/", "Symphony | Secure Seamless Communication")
+driver.maximize_window()
 time.sleep(2)
 
-cf = ContactUsForm(driver)
-cf.clickOnForm()
-time.sleep(2)
-cf.verifyFormPage()
-cf.enterName()
-cf.enterEmail()
-cf.selectGenderFemale()
-cf.enterMessage()
-cf.getCaptcha()
-cf.passCaptcha()
-cf.clickOnPostButton()
+su = SignUpPage(driver)
+su.click_sign_up_link()
+su.fill_in_form()
+su.check_password()
+su.after_sign_up_same_email()
+
+
+# cf = ContactUsForm(driver)
+# cf.clickOnForm()
+# time.sleep(2)
+# cf.verifyFormPage()
+# cf.enterName()
+# cf.enterEmail()
+# cf.selectGenderFemale()
+# cf.enterMessage()
+# cf.getCaptcha()
+# cf.passCaptcha()
+# cf.clickOnPostButton()
 
 
 # ele = bp.getWebElement("user_input","id")

@@ -1,6 +1,7 @@
 from selenium import webdriver
 import SeleniumFramework.utilities.CustomLogger as cl
 
+
 class WebDriverClass:
     log = cl.customLogger()
 
@@ -19,4 +20,3 @@ class WebDriverClass:
             self.log.info("Firefox driver is initializing.")
 
         return driver
-

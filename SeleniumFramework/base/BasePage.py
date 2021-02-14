@@ -141,6 +141,22 @@ class BaseClass:
             assert False
         return ElementDisplayed
 
+    def isElementEnabled(self, locatorValue, locatorType="id"):
+        ElementEnabled = None
+        try:
+            locatorType = locatorType.lower()
+            webElement = self.waitForElement(locatorValue, locatorType)
+            ElementEnabled = webElement.is_enabled()
+            self.log.info(
+                "WebElement is Enabled on web page with locator value " + locatorValue + " using locatorType " + locatorType)
+        except:
+            self.log.error(
+                "WebElement is not Enabled on web page with locator value " + locatorValue + " using locatorType " + locatorType)
+            print_stack()
+            self.takeScreenshot(locatorType)
+            assert False
+        return ElementEnabled
+
     def scrollTo(self, locatorValue, locatorType="id"):
         actions = ActionChains(self.driver)
         try:
