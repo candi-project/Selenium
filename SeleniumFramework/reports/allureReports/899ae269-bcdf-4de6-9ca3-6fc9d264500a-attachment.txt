@@ -1,2 +1,0 @@
-[32mINFO    [0m BaseClass:BasePage.py:92 Web element found with locator value: body > app-root > div > app-side-nav > mat-drawer-container > mat-drawer-content > span > app-graph-active-devices > mat-card > div > div > app-refresh-button > div using locator Type: css
-[32mINFO    [0m BaseClass:BasePage.py:107 Clicked on WebElement with locator value body > app-root > div > app-side-nav > mat-drawer-container > mat-drawer-content > span > app-graph-active-devices > mat-card > div > div > app-refresh-button > div using locator Type: css

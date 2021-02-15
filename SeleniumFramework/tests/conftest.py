@@ -10,6 +10,7 @@ def beforeClass(request):
     driver = driver1.getWebDriver("chrome")
     bp = BaseClass(driver)
     bp.launchWebPage("https://my.symphony.com/", "Symphony | Secure Seamless Communication")
+    driver.maximize_window()
     if request.cls is not None:
         request.cls.driver = driver
     yield driver

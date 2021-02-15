@@ -3,6 +3,7 @@ import time
 from SeleniumFramework.base.BasePage import BaseClass
 from SeleniumFramework.pages.sign_up_page import SignUpPage
 from SeleniumFramework.pages.sign_in_page import SignInPage
+from SeleniumFramework.pages.reset_password import ResetPassword
 
 wd = WebDriverClass()
 driver = wd.getWebDriver("chrome")
@@ -18,12 +19,14 @@ time.sleep(2)
 # su.check_password()
 # su.after_sign_up_same_email()
 
-si = SignInPage(driver)
-si.enter_user_data()
-si.enter_authentication_code()
-si.after_sign_in()
+# si = SignInPage(driver)
+# si.enter_user_data()
+# si.enter_authentication_code()
+# si.after_sign_in()
 
-
+re = ResetPassword(driver)
+re.reset_password()
+re.check_recaptcha()
 
 # cf = ContactUsForm(driver)
 # cf.clickOnForm()
@@ -53,7 +56,7 @@ si.after_sign_in()
 # time.sleep(1)
 # bp.scrollTo("btnContactUs", "id")
 
-#bp.clickOnElement("DragAndDro", "link")
+# bp.clickOnElement("DragAndDro", "link")
 
 
 # log = cl.customLogger()
