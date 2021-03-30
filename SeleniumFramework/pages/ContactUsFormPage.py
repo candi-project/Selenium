@@ -29,7 +29,7 @@ class ContactUsForm(BaseClass):
         cl.allureLogs("Page is verified.")
 
     def enterName(self):
-        self.sendText("Candi rocks!", self._EnterName, "id")
+        self.sendText("Candi", self._EnterName, "id")
         cl.allureLogs("Entered name.")
 
     def enterEmail(self):
@@ -41,7 +41,7 @@ class ContactUsForm(BaseClass):
         cl.allureLogs("Selected gender-female.")
 
     def enterMessage(self):
-        self.sendText("High Vibe", self._EnterMessage, "id")
+        self.sendText("Automation is Fun!", self._EnterMessage, "id")
         cl.allureLogs("Entered message.")
 
     def getCaptcha(self):

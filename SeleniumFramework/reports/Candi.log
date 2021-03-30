@@ -121,3 +121,65 @@ div > mat-card > mat-card-content > table > tbody > tr:nth-child(1) > td.mat-cel
 10/12/20 16:47:55 PM Thursday: BarcodeConfigurations: INFO: Clicked on WebElement with locator value #button-container > app-button:nth-child(2) > button using locator Type: css
 10/12/20 16:47:57 PM Thursday: BarcodeConfigurations: INFO: Web element found with locator value: body > app-root > div > app-alert > div > mat-card > div using locator Type: css
 10/12/20 16:47:57 PM Thursday: BarcodeConfigurations: INFO: WebElement is Displayed on web page with locator value body > app-root > div > app-alert > div > mat-card > div using locatorType css
+30/03/21 16:22:10 PM Tuesday: WebDriverClass: INFO: Chrome driver is initializing.
+30/03/21 16:22:14 PM Tuesday: BaseClass: INFO: Web page launched with url: http://dummypoint.com/seleniumtemplate.html
+30/03/21 16:22:14 PM Tuesday: BaseClass: INFO: Web element found with locator value: Form using locator Type: link
+30/03/21 16:22:14 PM Tuesday: BaseClass: INFO: Clicked on WebElement with locator value Form using locator Type: link
+30/03/21 16:22:17 PM Tuesday: BaseClass: INFO: Web element found with locator value: reused_form using locator Type: id
+30/03/21 16:22:17 PM Tuesday: BaseClass: INFO: WebElement is Displayed on web page with locator value reused_form using locatorType id
+30/03/21 16:22:19 PM Tuesday: BaseClass: INFO: Web element found with locator value: reused_form using locator Type: id
+30/03/21 16:22:19 PM Tuesday: BaseClass: INFO: WebElement is Displayed on web page with locator value reused_form using locatorType id
+30/03/21 16:22:19 PM Tuesday: BaseClass: INFO: Web element found with locator value: name using locator Type: id
+30/03/21 16:22:20 PM Tuesday: BaseClass: INFO: Sent the text Candi rocks! in WebElement with locator value name using locatorType id
+30/03/21 16:22:20 PM Tuesday: BaseClass: INFO: Web element found with locator value: email using locator Type: id
+30/03/21 16:22:20 PM Tuesday: BaseClass: INFO: Sent the text cchiu615@gmail.com in WebElement with locator value email using locatorType id
+30/03/21 16:22:20 PM Tuesday: BaseClass: INFO: Web element found with locator value: input.form-radio[value=female] using locator Type: css
+30/03/21 16:22:20 PM Tuesday: BaseClass: INFO: Clicked on WebElement with locator value input.form-radio[value=female] using locator Type: css
+30/03/21 16:22:20 PM Tuesday: BaseClass: INFO: Web element found with locator value: message using locator Type: id
+30/03/21 16:22:20 PM Tuesday: BaseClass: INFO: Sent the text High Vibe in WebElement with locator value message using locatorType id
+30/03/21 16:22:20 PM Tuesday: BaseClass: INFO: Web element found with locator value: captcha_image using locator Type: id
+30/03/21 16:22:20 PM Tuesday: BaseClass: INFO: Got the text SGH456 in WebElement with locator value captcha_image using locatorType id
+30/03/21 16:22:20 PM Tuesday: BaseClass: INFO: Web element found with locator value: captcha_image using locator Type: id
+30/03/21 16:22:20 PM Tuesday: BaseClass: INFO: Got the text SGH456 in WebElement with locator value captcha_image using locatorType id
+30/03/21 16:22:20 PM Tuesday: BaseClass: INFO: Web element found with locator value: captcha using locator Type: id
+30/03/21 16:22:20 PM Tuesday: BaseClass: INFO: Sent the text SGH456 in WebElement with locator value captcha using locatorType id
+30/03/21 16:22:20 PM Tuesday: BaseClass: INFO: Web element found with locator value: btnContactUs using locator Type: id
+30/03/21 16:22:20 PM Tuesday: BaseClass: INFO: Scrolled to WebElement with locator value btnContactUs using locatorType id
+30/03/21 16:22:20 PM Tuesday: BaseClass: INFO: Web element found with locator value: btnContactUs using locator Type: id
+30/03/21 16:22:21 PM Tuesday: BaseClass: INFO: Clicked on WebElement with locator value btnContactUs using locator Type: id
+30/03/21 16:25:47 PM Tuesday: WebDriverClass: INFO: Chrome driver is initializing.
+30/03/21 16:25:48 PM Tuesday: BaseClass: INFO: Web page launched with url: http://dummypoint.com/seleniumtemplate.html
+30/03/21 16:25:49 PM Tuesday: BaseClass: INFO: Web element found with locator value: Form using locator Type: link
+30/03/21 16:25:50 PM Tuesday: BaseClass: INFO: Clicked on WebElement with locator value Form using locator Type: link
+30/03/21 16:25:53 PM Tuesday: BaseClass: INFO: Web element found with locator value: reused_form using locator Type: id
+30/03/21 16:25:53 PM Tuesday: BaseClass: INFO: WebElement is Displayed on web page with locator value reused_form using locatorType id
+30/03/21 16:25:55 PM Tuesday: BaseClass: INFO: Web element found with locator value: reused_form using locator Type: id
+30/03/21 16:25:55 PM Tuesday: BaseClass: INFO: WebElement is Displayed on web page with locator value reused_form using locatorType id
+30/03/21 16:25:55 PM Tuesday: BaseClass: INFO: Web element found with locator value: name using locator Type: id
+30/03/21 16:25:55 PM Tuesday: BaseClass: INFO: Sent the text Candi rocks! in WebElement with locator value name using locatorType id
+30/03/21 16:25:55 PM Tuesday: BaseClass: INFO: Web element found with locator value: email using locator Type: id
+30/03/21 16:25:55 PM Tuesday: BaseClass: INFO: Sent the text cchiu615@gmail.com in WebElement with locator value email using locatorType id
+30/03/21 16:25:55 PM Tuesday: BaseClass: INFO: Web element found with locator value: input.form-radio[value=female] using locator Type: css
+30/03/21 16:25:55 PM Tuesday: BaseClass: INFO: Clicked on WebElement with locator value input.form-radio[value=female] using locator Type: css
+30/03/21 16:25:55 PM Tuesday: BaseClass: INFO: Web element found with locator value: message using locator Type: id
+30/03/21 16:25:55 PM Tuesday: BaseClass: INFO: Sent the text High Vibe in WebElement with locator value message using locatorType id
+30/03/21 16:25:55 PM Tuesday: BaseClass: INFO: Web element found with locator value: captcha_image using locator Type: id
+30/03/21 16:25:55 PM Tuesday: BaseClass: INFO: Got the text SGH456 in WebElement with locator value captcha_image using locatorType id
+30/03/21 16:25:55 PM Tuesday: BaseClass: INFO: Web element found with locator value: captcha_image using locator Type: id
+30/03/21 16:25:55 PM Tuesday: BaseClass: INFO: Got the text SGH456 in WebElement with locator value captcha_image using locatorType id
+30/03/21 16:25:55 PM Tuesday: BaseClass: INFO: Web element found with locator value: captcha using locator Type: id
+30/03/21 16:25:55 PM Tuesday: BaseClass: INFO: Sent the text SGH456 in WebElement with locator value captcha using locatorType id
+30/03/21 16:25:55 PM Tuesday: BaseClass: INFO: Web element found with locator value: btnContactUs using locator Type: id
+30/03/21 16:25:56 PM Tuesday: BaseClass: INFO: Scrolled to WebElement with locator value btnContactUs using locatorType id
+30/03/21 16:25:56 PM Tuesday: BaseClass: INFO: Web element found with locator value: btnContactUs using locator Type: id
+30/03/21 16:25:56 PM Tuesday: BaseClass: INFO: Clicked on WebElement with locator value btnContactUs using locator Type: id
+30/03/21 16:26:27 PM Tuesday: WebDriverClass: INFO: Chrome driver is initializing.
+30/03/21 16:27:44 PM Tuesday: BaseClass: INFO: Web page not launched with url: http://dummypoint.com/seleniumtemplate.html
+30/03/21 16:28:12 PM Tuesday: WebDriverClass: INFO: Chrome driver is initializing.
+30/03/21 16:28:14 PM Tuesday: BaseClass: INFO: Web page launched with url: http://dummypoint.com/seleniumtemplate.html
+30/03/21 16:28:17 PM Tuesday: BaseClass: INFO: Web element found with locator value: section-body using locator Type: class
+30/03/21 16:28:17 PM Tuesday: BaseClass: INFO: WebElement is Displayed on web page with locator value section-body using locatorType class
+30/03/21 16:28:20 PM Tuesday: BaseClass: INFO: Web element found with locator value: user_input using locator Type: id
+30/03/21 16:28:20 PM Tuesday: BaseClass: INFO: Sent the text Candi is cute. in WebElement with locator value user_input using locatorType id
+30/03/21 16:28:21 PM Tuesday: BaseClass: INFO: Web element found with locator value: submitbutton using locator Type: id
+30/03/21 16:28:21 PM Tuesday: BaseClass: INFO: Clicked on WebElement with locator value submitbutton using locator Type: id

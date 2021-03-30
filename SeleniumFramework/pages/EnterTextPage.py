@@ -20,7 +20,7 @@ class EnterText(BaseClass):
 
     def enterText(self):
         time.sleep(3)
-        self.sendText("Candi is cute.", self._enterText, "id")
+        self.sendText("Automation Demo.", self._enterText, "id")
         cl.allureLogs("Text entered.")
 
     def clickOnSubmitButton(self):
