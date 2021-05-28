@@ -7,7 +7,7 @@ class WebDriverClass:
     def getWebDriver(self, browserName):
         driver = None
         if browserName == "chrome":
-            driver = webdriver.Chrome(executable_path="/home/candi/Desktop/Selenium/Selenium/driver/chromedriver87")
+            driver = webdriver.Chrome(executable_path="/Users/candichiu/Documents/Git/Selenium/driver/chromedriver91")
             self.log.info("Chrome driver is initializing.")
 
         elif browserName == "safari":
@@ -15,7 +15,7 @@ class WebDriverClass:
             self.log.info("Safari driver is initializing.")
 
         elif browserName == "firefox":
-            driver = webdriver.Firefox(executable_path="/home/candi/Desktop/Selenium/Selenium/driver/geckodriver")
+            driver = webdriver.Firefox(executable_path="/Users/candichiu/Documents/Git/Selenium/driver/geckodriver-3")
             self.log.info("Firefox driver is initializing.")
 
         return driver
