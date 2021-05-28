@@ -10,6 +10,8 @@ def beforeClass(request):
     driver = driver1.getWebDriver("chrome")
     bp = BaseClass(driver)
     bp.launchWebPage("http://dummypoint.com/seleniumtemplate.html", "Selenium Template — DummyPoint")
+    driver.maximize_window()
+
     if request.cls is not None:
         request.cls.driver = driver
     yield driver
