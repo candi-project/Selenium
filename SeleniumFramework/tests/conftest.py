@@ -19,6 +19,7 @@ def beforeClass(request):
     driver.quit()
     print("After class.")
 
+
 @pytest.yield_fixture()
 def setUp():
     print("This is a setup guide.")

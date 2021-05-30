@@ -19,10 +19,14 @@ class Login(BaseClass):
 
     def fill_in_user_data(self):
         self.sendText("cchiu615@gmail.com", self._email, "id")
+        cl.allureLogs("Entered email.")
         self.sendText("Candi_test", self._password, "id")
+        cl.allureLogs("Entered password.")
 
     def decline_cookie(self):
         self.clickOnElement(self._decline_button, "css")
+        cl.allureLogs("Declined cookie.")
 
     def click_sign_in_button(self):
         self.clickOnElement(self._sign_in_button, "css")
+        cl.allureLogs("Clicked sign_in button.")
